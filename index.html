@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Armory AI — Enterprise AI Automation Platform | Build & Deploy Custom Agents</title>
+  <meta name="description" content="Power your future with AI. Deploy custom enterprise agents and automate complex workflows. Scale your intelligence with Armory — the premier AI-driven data automation platform." />
+  <meta name="keywords" content="AI automation, enterprise agents, data automation, machine learning, workflow automation, LLM, GPT-4, Claude" />
+  <meta name="author" content="Armory AI" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph / Social -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Armory AI — Enterprise AI Automation Platform" />
+  <meta property="og:description" content="Deploy custom enterprise agents and automate complex workflows. Scale your intelligence with Armory today." />
+  <meta property="og:url" content="https://armory-ai.netlify.app" />
+  <meta property="og:site_name" content="Armory AI" />
+  <meta property="og:locale" content="en_US" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Armory AI — Enterprise AI Automation Platform" />
+  <meta name="twitter:description" content="Deploy custom enterprise agents and automate complex workflows." />
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://armory-ai.netlify.app" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+
+  <!-- ===== HEADER / NAV ===== -->
+  <header id="site-header" class="site-header">
+    <nav class="nav-container" aria-label="Primary navigation">
+      <a href="/" class="logo" id="logo" aria-label="Armory AI Home">
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+          <path d="M20 2L8 18h8l-4 20L32 20h-8l4-18H20z" fill="currentColor"/>
+        </svg>
+        <span class="logo-text">armory</span>
+      </a>
+      <div class="nav-links" id="nav-links">
+        <a href="#features" class="nav-link">AI Strategy</a>
+        <a href="#workflow" class="nav-link">Custom Agents</a>
+        <a href="#pricing" class="nav-link">Process Automation</a>
+        <a href="#testimonials" class="nav-link">Data Intelligence</a>
+      </div>
+      <div class="nav-right">
+        <div class="nav-social-logos" aria-label="Trusted by">
+          <span class="social-logo" aria-label="Aetna">
+            <svg viewBox="0 0 80 24" width="80" height="24" fill="currentColor"><text x="0" y="18" font-family="Inter, sans-serif" font-size="16" font-weight="700">♥ aetna</text></svg>
+          </span>
+          <span class="social-logo" aria-label="Cigna">
+            <svg viewBox="0 0 80 24" width="80" height="24" fill="currentColor"><text x="0" y="18" font-family="Inter, sans-serif" font-size="14" font-weight="700">cigna</text></svg>
+          </span>
+          <span class="social-logo" aria-label="Anthem">
+            <svg viewBox="0 0 100 24" width="100" height="24" fill="currentColor"><text x="0" y="18" font-family="Inter, sans-serif" font-size="14" font-weight="700">Anthem ✚♥</text></svg>
+          </span>
+        </div>
+        <button class="hamburger" id="hamburger-btn" aria-label="Toggle mobile menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ===== HERO ===== -->
+    <section id="hero" class="hero-section" aria-label="Hero">
+      <div class="hero-bg-animation" aria-hidden="true">
+        <canvas id="hero-canvas"></canvas>
+      </div>
+      <div class="hero-content">
+        <h1 class="hero-title">
+          <span class="hero-title-line" data-animate="slide-up">Power your</span>
+          <span class="hero-title-line" data-animate="slide-up" style="--delay: 0.1s">future with AI</span>
+        </h1>
+        <p class="hero-subtitle" data-animate="fade-in" style="--delay: 0.25s">
+          Deploy custom enterprise agents and automate complex workflows.<br />
+          Scale your intelligence with Armory today.
+        </p>
+        <a href="#workflow" class="hero-cta" data-animate="fade-in" style="--delay: 0.35s">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+          <span>Build A Workflow</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ===== INTEGRATION TEXT REVEAL ===== -->
+    <section id="integration-text" class="integration-section" aria-label="AI Integration">
+      <div class="section-container">
+        <div class="integration-icons" aria-hidden="true">
+          <span class="int-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          </span>
+          <span class="int-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </span>
+          <span class="int-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+          </span>
+          <span class="int-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+          </span>
+        </div>
+        <h2 class="integration-heading" id="integration-heading">
+          Integrate with the world's most powerful neural engines. Seamlessly connect your custom data to GPT-4, Claude 3, and Perplexity for unmatched precision. Build agents that don't just process, they understand.
+        </h2>
+        <p class="integration-sub">
+          Unlock the full potential of LLM-native workflows. Our infrastructure ensures low latency and high-fidelity output for every request.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== FEATURE ICONS ROW ===== -->
+    <section id="features" class="features-section" aria-label="Core Features">
+      <div class="section-container">
+        <div class="features-grid" id="features-grid">
+          <article class="feature-card" data-animate="stagger">
+            <div class="feature-icon" aria-hidden="true">
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.2">
+                <circle cx="16" cy="20" r="8"/><circle cx="32" cy="28" r="8"/><path d="M20 14l8 8M28 22l-8 8"/>
+                <path d="M8 36l4-4M36 12l4-4"/>
+              </svg>
+            </div>
+            <h3 class="feature-title">Infinite Visual Canvas</h3>
+            <p class="feature-desc">Map out multi-step agent behaviors on a high-precision grid. Drag and drop triggers, logic gates, and actions to craft custom paths.</p>
+          </article>
+          <article class="feature-card" data-animate="stagger">
+            <div class="feature-icon" aria-hidden="true">
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.2">
+                <rect x="8" y="12" width="32" height="24" rx="2"/><path d="M24 12V8M16 36v4M32 36v4"/>
+                <circle cx="18" cy="24" r="3"/><circle cx="30" cy="24" r="3"/><path d="M21 24h6"/>
+              </svg>
+            </div>
+            <h3 class="feature-title">Autonomous Execution</h3>
+            <p class="feature-desc">Run complex decision trees without manual intervention. Our engine handles conditional branching and error recovery automatically.</p>
+          </article>
+          <article class="feature-card" data-animate="stagger">
+            <div class="feature-icon" aria-hidden="true">
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.2">
+                <rect x="10" y="10" width="28" height="28" rx="4"/><path d="M18 24h12M24 18v12"/>
+                <path d="M14 14l4 4M30 14l4 4M14 30l4 4M30 30l4 4" stroke-dasharray="2 2"/>
+              </svg>
+            </div>
+            <h3 class="feature-title">End-to-End Encryption</h3>
+            <p class="feature-desc">Every node and data transfer is shielded by industrial-grade security. Maintain total control over your organizational data flow.</p>
+          </article>
+          <article class="feature-card" data-animate="stagger">
+            <div class="feature-icon" aria-hidden="true">
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.2">
+                <rect x="6" y="20" width="12" height="16" rx="2"/><rect x="18" y="12" width="12" height="24" rx="2"/>
+                <rect x="30" y="16" width="12" height="20" rx="2"/><path d="M12 28h24" stroke-dasharray="2 2"/>
+              </svg>
+            </div>
+            <h3 class="feature-title">Production-Ready Stack</h3>
+            <p class="feature-desc">Connect core business platforms and internal services through secure, ready integrations that scale with your volume.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== STATS ===== -->
+    <section id="stats" class="stats-section" aria-label="Performance Statistics">
+      <div class="section-container">
+        <div class="stats-grid">
+          <div class="stat-card" data-animate="count">
+            <div class="stat-corner tl" aria-hidden="true"></div>
+            <span class="stat-value" data-target="12">0</span><span class="stat-unit">ms</span>
+            <p class="stat-label">Average latency for real-time inference.</p>
+            <div class="stat-corner br" aria-hidden="true"></div>
+          </div>
+          <div class="stat-card" data-animate="count">
+            <div class="stat-corner tl" aria-hidden="true"></div>
+            <span class="stat-value" data-target="10">0</span><span class="stat-unit">x</span>
+            <p class="stat-label">Increase in manual task processing speed.</p>
+            <div class="stat-corner br" aria-hidden="true"></div>
+          </div>
+          <div class="stat-card" data-animate="count">
+            <div class="stat-corner tl" aria-hidden="true"></div>
+            <span class="stat-value" data-target="99">0</span><span class="stat-unit">%</span>
+            <p class="stat-label">Uptime for critical agent infrastructure.</p>
+            <div class="stat-corner br" aria-hidden="true"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== VIDEO CTA ===== -->
+    <section id="video-cta" class="video-section" aria-label="Product Demo Video">
+      <div class="video-player-ui">
+        <div class="video-bg" aria-hidden="true" style="background-image: url('video_poster.png'); background-size: cover; background-position: center;">
+          <canvas id="video-canvas"></canvas>
+        </div>
+        <div class="video-overlay">
+          <h2 class="video-title">What It Takes to Turn AI Into a Business Asset</h2>
+          <button class="play-btn" id="play-btn" aria-label="Play demo video">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            PLAY VIDEO
+          </button>
+          <span class="video-duration" style="margin-top: 20px;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            02:45
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CASE STUDIES ===== -->
+    <section id="case-studies" class="cases-section" aria-label="Case Studies">
+      <div class="section-container">
+        <div class="section-badge" aria-hidden="true">
+          <svg width="24" height="12" viewBox="0 0 24 12" fill="currentColor"><path d="M0 6h4M8 6h4M16 6h4M20 2v8"/></svg>
+          CASE STUDIES
+        </div>
+        <h2 class="section-heading">Proven neural solutions</h2>
+        <p class="section-subtext">We partner with industry leaders to deploy bespoke AI agents that solve complex operational hurdles and drive measurable growth.</p>
+
+        <div class="cases-list">
+          <article class="case-item" style="--case-bg: url('cigna_bg.png');">
+            <div class="case-bg-layer"></div>
+            <div class="case-logo" style="position:relative; z-index:2;">
+              <svg viewBox="0 0 120 40" width="120" height="40" fill="currentColor"><text x="10" y="28" font-family="Inter, sans-serif" font-size="20" font-weight="700">cigna</text></svg>
+            </div>
+            <div class="case-info" style="position:relative; z-index:2;">
+              <span class="case-year">//2026</span>
+              <h3 class="case-title">Cigna Smart Health Systems</h3>
+              <p class="case-desc">Revolutionizing patient care through predictive analytics and seamless AI-driven diagnostic integration tools.</p>
+            </div>
+            <a href="#" class="case-arrow" aria-label="View Cigna case study" style="position:relative; z-index:2;">»</a>
+          </article>
+          <article class="case-item" style="--case-bg: url('aetna_bg.png');">
+            <div class="case-bg-layer"></div>
+            <div class="case-logo" style="position:relative; z-index:2;">
+              <svg viewBox="0 0 120 40" width="120" height="40" fill="currentColor"><text x="10" y="28" font-family="Inter, sans-serif" font-size="18" font-weight="700">♥ aetna</text></svg>
+            </div>
+            <div class="case-info" style="position:relative; z-index:2;">
+              <span class="case-year">//2026</span>
+              <h3 class="case-title">Aetna Health Data Ecosystem</h3>
+              <p class="case-desc">We automated Aetna's member data management using secure AI to provide personalized care and clinical insights.</p>
+            </div>
+            <a href="#" class="case-arrow" aria-label="View Aetna case study" style="position:relative; z-index:2;">»</a>
+          </article>
+          <article class="case-item" style="--case-bg: url('anthem_bg.png');">
+            <div class="case-bg-layer"></div>
+            <div class="case-logo" style="position:relative; z-index:2;">
+              <svg viewBox="0 0 140 40" width="140" height="40" fill="currentColor"><text x="5" y="28" font-family="Inter, sans-serif" font-size="18" font-weight="700">Anthem ✚♥</text></svg>
+            </div>
+            <div class="case-info" style="position:relative; z-index:2;">
+              <span class="case-year">//2026</span>
+              <h3 class="case-title">Anthem Neural Care Network</h3>
+              <p class="case-desc">We deployed a custom LLM to automate Anthem's provider relations, reducing ticket latency by eighty-five percent.</p>
+            </div>
+            <a href="#" class="case-arrow" aria-label="View Anthem case study" style="position:relative; z-index:2;">»</a>
+          </article>
+        </div>
+        <a href="#" class="cases-more-btn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+          More Projects
+        </a>
+      </div>
+    </section>
+
+    <!-- ===== WORKFLOW BUILDER ===== -->
+    <section id="workflow" class="workflow-section" aria-label="Workflow Builder">
+      <div class="section-container">
+        <div class="section-badge" aria-hidden="true">
+          <svg width="24" height="12" viewBox="0 0 24 12" fill="currentColor"><path d="M0 6h4M8 6h4M16 6h4M20 2v8"/></svg>
+          WORKFLOW
+        </div>
+        <h2 class="section-heading light">Build logic at scale</h2>
+        <p class="section-subtext light">Design, deploy, and manage sophisticated AI workflows through an intuitive visual interface. No complex coding—just pure logic.</p>
+
+        <div class="workflow-demo" aria-label="Workflow builder demonstration">
+          <div class="workflow-sidebar">
+            <div class="ws-tab active">AI AGENT</div>
+            <div class="ws-tab">AI CHAT</div>
+            <div class="ws-label">STACK</div>
+            <div class="ws-icons-grid">
+              <span class="ws-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg></span>
+              <span class="ws-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></span>
+              <span class="ws-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span>
+              <span class="ws-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg></span>
+              <span class="ws-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></span>
+              <span class="ws-icon ws-icon-add"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+            </div>
+            <div class="ws-auto">
+              <span class="ws-auto-label">AUTO</span>
+              <div class="ws-auto-wave" aria-hidden="true"></div>
+            </div>
+          </div>
+          <div class="workflow-canvas">
+            <div class="wf-toolbar">
+              <button class="wf-tb-btn" aria-label="Undo"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 10h13a4 4 0 0 1 0 8H8"/><polyline points="7,6 3,10 7,14"/></svg></button>
+              <button class="wf-tb-btn" aria-label="Redo"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10H8a4 4 0 0 0 0 8h8"/><polyline points="17,6 21,10 17,14"/></svg></button>
+              <div class="wf-tb-divider"></div>
+              <button class="wf-tb-mode active">AGENT MODE <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></button>
+              <button class="wf-tb-mode">UNTITLED <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 3a2.83 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"/></svg></button>
+            </div>
+            <div class="wf-nodes">
+              <div class="wf-node">
+                <div class="wf-node-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+                <span class="wf-node-label">Email Trigger</span>
+                <span class="wf-node-sub">(IMAP)</span>
+              </div>
+              <div class="wf-connector"><span class="wf-connector-badge">1 Item</span></div>
+              <div class="wf-node">
+                <div class="wf-node-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 3a2.83 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"/></svg></div>
+                <span class="wf-node-label">Edit Fields</span>
+                <span class="wf-node-sub">Manual</span>
+              </div>
+              <div class="wf-connector"><span class="wf-connector-badge">1 Item</span></div>
+              <div class="wf-node highlight">
+                <div class="wf-node-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
+                <span class="wf-node-label">AI Agent</span>
+                <span class="wf-node-sub">Tools Agent</span>
+              </div>
+              <div class="wf-connector"><span class="wf-connector-badge">1 Item</span></div>
+              <div class="wf-node">
+                <div class="wf-node-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div>
+                <span class="wf-node-label">Code</span>
+              </div>
+              <div class="wf-connector"><span class="wf-connector-badge">1 Item</span></div>
+              <div class="wf-node">
+                <div class="wf-node-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 3a2.83 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"/></svg></div>
+                <span class="wf-node-label">Edit Fields1</span>
+                <span class="wf-node-sub">Manual</span>
+              </div>
+            </div>
+            <div class="wf-branch">
+              <div class="wf-branch-line" aria-hidden="true"></div>
+              <div class="wf-branch-nodes">
+                <div class="wf-node small">
+                  <div class="wf-node-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg></div>
+                  <span class="wf-node-label">Telegram</span>
+                  <span class="wf-node-sub">sendAndWait message</span>
+                </div>
+                <div class="wf-connector small"></div>
+                <div class="wf-node small">
+                  <div class="wf-node-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 3h5v5M4 20L21 3M21 16v5h-5M4 4l17 17" stroke-dasharray="0"/></svg></div>
+                  <span class="wf-node-label">If</span>
+                </div>
+                <div class="wf-connector small"></div>
+                <div class="wf-node small">
+                  <div class="wf-node-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg></div>
+                  <span class="wf-node-label">Send Email</span>
+                  <span class="wf-node-sub">Send</span>
+                </div>
+                <div class="wf-node-add"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== BENTO FEATURES (Feature 2) ===== -->
+    <section id="bento-features" class="bento-section" aria-label="Platform Features Bento Grid">
+      <div class="section-container">
+        <div class="section-badge" aria-hidden="true">
+          <svg width="24" height="12" viewBox="0 0 24 12" fill="currentColor"><path d="M0 6h4M8 6h4M16 6h4M20 2v8"/></svg>
+          PLATFORM
+        </div>
+        <h2 class="section-heading">Built for the long term</h2>
+        <p class="section-subtext">We don't just ship code; we architect neural ecosystems. Our approach combines rigorous testing with rapid deployment cycles.</p>
+
+        <!-- Desktop: Bento Grid / Mobile: Accordion -->
+        <div class="bento-grid" id="bento-grid">
+          <div class="bento-item" data-bento-index="0">
+            <div class="bento-visual" aria-hidden="true">
+              <canvas class="bento-canvas" data-type="particles"></canvas>
+            </div>
+            <div class="bento-content">
+              <div class="bento-icon">
+                <svg width="40" height="40" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M24 4l6 12 12 2-9 9 2 13-11-6-11 6 2-13-9-9 12-2z"/><circle cx="24" cy="24" r="6"/></svg>
+              </div>
+              <h3 class="bento-title">Prime Logic</h3>
+              <p class="bento-desc">We prioritize high-fidelity model alignment to ensure your agents deliver consistent results.</p>
+            </div>
+          </div>
+          <div class="bento-item" data-bento-index="1">
+            <div class="bento-visual" aria-hidden="true">
+              <canvas class="bento-canvas" data-type="waves"></canvas>
+            </div>
+            <div class="bento-content">
+              <div class="bento-icon">
+                <svg width="40" height="40" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.2"><circle cx="24" cy="24" r="16"/><path d="M24 8v32M8 24h32"/><ellipse cx="24" cy="24" rx="8" ry="16"/></svg>
+              </div>
+              <h3 class="bento-title">Total Clarity</h3>
+              <p class="bento-desc">Gain full observability into how your data is processed, indexed, and retrieved by your AI.</p>
+            </div>
+          </div>
+          <div class="bento-item" data-bento-index="2">
+            <div class="bento-visual" aria-hidden="true">
+              <canvas class="bento-canvas" data-type="grid"></canvas>
+            </div>
+            <div class="bento-content">
+              <div class="bento-icon">
+                <svg width="40" height="40" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M24 4v8l8-4zM24 4v8l-8-4z"/><path d="M24 12v12"/><circle cx="24" cy="30" r="8"/><path d="M20 30l3 3 5-6"/></svg>
+              </div>
+              <h3 class="bento-title">Fast Cycles</h3>
+              <p class="bento-desc">Transition from prototype to production in weeks, not months, with our pre-built frameworks.</p>
+            </div>
+          </div>
+          <div class="bento-item" data-bento-index="3">
+            <div class="bento-visual" aria-hidden="true">
+              <canvas class="bento-canvas" data-type="orb"></canvas>
+            </div>
+            <div class="bento-content">
+              <div class="bento-icon">
+                <svg width="40" height="40" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="6" y="14" width="36" height="20" rx="3"/><path d="M16 14V10a8 8 0 0 1 16 0v4"/><circle cx="24" cy="24" r="3"/><path d="M24 27v3"/></svg>
+              </div>
+              <h3 class="bento-title">Zero Trust Security</h3>
+              <p class="bento-desc">Every layer of your AI pipeline is secured with enterprise-grade encryption and access controls.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mobile Accordion (hidden on desktop) -->
+        <div class="bento-accordion" id="bento-accordion" role="tablist" aria-label="Feature accordion">
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PRODUCT STATISTICS ===== -->
+    <section id="product-stats" class="prodstats-section" aria-label="Product Statistics">
+      <div class="section-container">
+        <div class="section-badge" aria-hidden="true">
+          <svg width="24" height="12" viewBox="0 0 24 12" fill="currentColor"><path d="M0 6h4M8 6h4M16 6h4M20 2v8"/></svg>
+          PRODUCT STATISTICS
+        </div>
+        <h2 class="section-heading">Optimized for performance</h2>
+        <p class="section-subtext">Monitor every neural pulse in real-time. Armory provides deep telemetry into agent accuracy, server latency, and token efficiency.</p>
+        <div class="prodstats-grid">
+          <div class="prodstat-card">
+            <div class="prodstat-header">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+              <span class="prodstat-name">System Load</span>
+              <span class="prodstat-val">98.7%</span>
+            </div>
+            <p class="prodstat-sub">Active neural processing</p>
+            <div class="prodstat-gauge" aria-label="System load gauge">
+              <svg viewBox="0 0 200 120" class="gauge-svg">
+                <path d="M20 100 A80 80 0 1 1 180 100" fill="none" stroke="#333" stroke-width="8" stroke-linecap="round"/>
+                <path d="M20 100 A80 80 0 1 1 180 100" fill="none" stroke="#F1F6F4" stroke-width="8" stroke-linecap="round" class="gauge-fill" style="--pct:0.79"/>
+              </svg>
+              <div class="gauge-center">
+                <span class="gauge-num">12</span>
+                <span class="gauge-label">Core Systems</span>
+              </div>
+              <div class="gauge-stats">
+                <div><span class="gs-val">79%</span><span class="gs-label">CACHE</span></div>
+                <div><span class="gs-val">4M</span><span class="gs-label">UPTIME</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="prodstat-card">
+            <div class="prodstat-header">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+              <span class="prodstat-name">SLA Response</span>
+              <span class="prodstat-val">99.99%</span>
+            </div>
+            <p class="prodstat-sub">Global uptime monitoring</p>
+            <div class="prodstat-chart" aria-label="SLA response chart">
+              <div class="sla-badge">SLA 78%</div>
+              <div class="bar-chart">
+                <div class="bar" style="--h:85%"></div>
+                <div class="bar" style="--h:60%"></div>
+                <div class="bar" style="--h:70%"></div>
+                <div class="bar" style="--h:90%"></div>
+                <div class="bar" style="--h:45%"></div>
+                <div class="bar" style="--h:55%"></div>
+                <div class="bar" style="--h:30%"></div>
+              </div>
+            </div>
+          </div>
+          <div class="prodstat-card">
+            <div class="prodstat-header">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+              <span class="prodstat-name">Token Usage</span>
+              <span class="prodstat-val">8.4M</span>
+            </div>
+            <p class="prodstat-sub">Monthly volume throughput</p>
+            <div class="prodstat-gauge" aria-label="Token usage gauge">
+              <svg viewBox="0 0 200 120" class="gauge-svg">
+                <path d="M20 100 A80 80 0 1 1 180 100" fill="none" stroke="#333" stroke-width="8" stroke-linecap="round"/>
+                <path d="M20 100 A80 80 0 1 1 180 100" fill="none" stroke="#F1F6F4" stroke-width="8" stroke-linecap="round" class="gauge-fill" style="--pct:0.65"/>
+              </svg>
+              <div class="gauge-center">
+                <span class="gauge-num">264</span>
+              </div>
+              <div class="gauge-stats">
+                <div><span class="gs-val">104</span><span class="gs-label">TOTAL QUERIES</span></div>
+                <div><span class="gs-val">79</span><span class="gs-label">ACTIVE</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== TABBED FEATURES ===== -->
+    <section id="tabbed-features" class="tabbed-section" aria-label="Feature Tabs">
+      <div class="section-container">
+        <p class="section-subtext">Go beyond simple chat interfaces. Armory provides the underlying architecture to build, test, and scale enterprise-grade agents.</p>
+        <div class="tabs-container" role="tablist" aria-label="Feature categories">
+          <button class="tab-btn active" role="tab" aria-selected="true" data-tab="discovery" id="tab-discovery">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            DISCOVERY
+          </button>
+          <button class="tab-btn" role="tab" aria-selected="false" data-tab="analysis" id="tab-analysis">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="2"/><line x1="4" y1="10" x2="20" y2="10"/></svg>
+            ANALYSIS
+          </button>
+          <button class="tab-btn" role="tab" aria-selected="false" data-tab="training" id="tab-training">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            TRAINING
+          </button>
+          <button class="tab-btn" role="tab" aria-selected="false" data-tab="deploy" id="tab-deploy">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 14.9A7 7 0 1 1 15.7 8h1.8a4.5 4.5 0 0 1 .5 8.9"/><polyline points="12,12 12,21"/><polyline points="8,17 12,21 16,17"/></svg>
+            DEPLOY
+          </button>
+        </div>
+        <div class="tab-panels">
+          <div class="tab-panel active" role="tabpanel" id="panel-discovery" aria-labelledby="tab-discovery">
+            <div class="tab-panel-visual">
+              <canvas id="discovery-canvas" aria-hidden="true"></canvas>
+            </div>
+            <div class="tab-panel-info">
+              <h3>Discover hidden patterns in your data</h3>
+              <p>Our discovery engine scans millions of data points to surface actionable insights. Let AI find what humans miss.</p>
+              <div class="tab-metric">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                <span>SCORE METRICS</span>
+              </div>
+            </div>
+          </div>
+          <div class="tab-panel" role="tabpanel" id="panel-analysis" aria-labelledby="tab-analysis">
+            <div class="tab-panel-visual">
+              <div class="analysis-card">
+                <div class="ac-header"><span class="ac-dots" aria-hidden="true">•••</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
+                <div class="ac-body">
+                  <div class="ac-row"><span>Your score</span><span class="ac-stars">★★★★★</span></div>
+                  <div class="ac-progress"><div class="ac-progress-bar" style="width: 80%"></div></div>
+                  <div class="ac-scores"><span>9/10</span><span>8/10</span><span>100%</span><span>8.5</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-panel-info">
+              <h3>Evaluate agent performance with surgical precision</h3>
+              <p>Get real-time scoring on accuracy, safety, and contextual relevance. Quantify every interaction for total quality.</p>
+              <div class="tab-metric">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                <span>SCORE METRICS</span>
+              </div>
+            </div>
+          </div>
+          <div class="tab-panel" role="tabpanel" id="panel-training" aria-labelledby="tab-training">
+            <div class="tab-panel-visual"><canvas class="tab-canvas" aria-hidden="true"></canvas></div>
+            <div class="tab-panel-info">
+              <h3>Fine-tune models with your proprietary data</h3>
+              <p>Train on your own datasets with built-in guardrails. Achieve domain-specific accuracy without compromising safety.</p>
+              <div class="tab-metric">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                <span>TRAINING METRICS</span>
+              </div>
+            </div>
+          </div>
+          <div class="tab-panel" role="tabpanel" id="panel-deploy" aria-labelledby="tab-deploy">
+            <div class="tab-panel-visual"><canvas class="tab-canvas" aria-hidden="true"></canvas></div>
+            <div class="tab-panel-info">
+              <h3>Ship to production with confidence</h3>
+              <p>One-click deployment with auto-scaling, monitoring, and rollback. From prototype to production in minutes.</p>
+              <div class="tab-metric">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                <span>DEPLOY STATUS</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PRICING (Feature 1) ===== -->
+    <section id="pricing" class="pricing-section" aria-label="Pricing Plans">
+      <div class="section-container">
+        <div class="section-badge" aria-hidden="true">
+          <svg width="24" height="12" viewBox="0 0 24 12" fill="currentColor"><path d="M0 6h4M8 6h4M16 6h4M20 2v8"/></svg>
+          PRICING
+        </div>
+        <h2 class="section-heading">Transparent pricing</h2>
+        <p class="section-subtext">Choose the plan that scales with your neural infrastructure. No hidden fees, no surprises.</p>
+
+        <div class="pricing-controls" id="pricing-controls">
+          <div class="billing-toggle" id="billing-toggle" role="radiogroup" aria-label="Billing cycle">
+            <button class="billing-btn active" role="radio" aria-checked="true" data-billing="monthly">Monthly</button>
+            <button class="billing-btn" role="radio" aria-checked="false" data-billing="annual">Annual</button>
+            <div class="billing-slider" aria-hidden="true"></div>
+          </div>
+          <div class="currency-select" id="currency-select">
+            <label for="currency-dropdown" class="sr-only">Select currency</label>
+            <select id="currency-dropdown" aria-label="Currency selection">
+              <option value="USD" selected>USD ($)</option>
+              <option value="INR">INR (₹)</option>
+              <option value="EUR">EUR (€)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="pricing-grid" id="pricing-grid">
+          <article class="pricing-card" data-tier="starter">
+            <div class="pricing-card-header">
+              <h3 class="pricing-tier-name">Starter</h3>
+              <p class="pricing-tier-desc">For individuals and small teams exploring AI automation.</p>
+            </div>
+            <div class="pricing-amount">
+              <span class="pricing-currency" data-price-symbol>$</span>
+              <span class="pricing-value" data-price-value>29</span>
+              <span class="pricing-period" data-price-period>/mo</span>
+            </div>
+            <ul class="pricing-features" aria-label="Starter plan features">
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--forsythia)" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> 3 Active Agents</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--forsythia)" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> 10K API Requests/mo</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--forsythia)" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Basic Analytics</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--forsythia)" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Community Support</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--forsythia)" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Standard Encryption</li>
+            </ul>
+            <a href="#" class="pricing-cta">Get Started</a>
+          </article>
+
+          <article class="pricing-card featured" data-tier="professional">
+            <div class="pricing-badge">Most Popular</div>
+            <div class="pricing-card-header">
+              <h3 class="pricing-tier-name">Professional</h3>
+              <p class="pricing-tier-desc">For growing teams that need production-grade AI infrastructure.</p>
+            </div>
+            <div class="pricing-amount">
+              <span class="pricing-currency" data-price-symbol>$</span>
+              <span class="pricing-value" data-price-value>79</span>
+              <span class="pricing-period" data-price-period>/mo</span>
+            </div>
+            <ul class="pricing-features" aria-label="Professional plan features">
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--forsythia)" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> 15 Active Agents</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--forsythia)" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> 100K API Requests/mo</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--forsythia)" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Advanced Analytics</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--forsythia)" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Priority Support</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--forsythia)" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> End-to-End Encryption</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--forsythia)" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Custom Integrations</li>
+            </ul>
+            <a href="#" class="pricing-cta featured">Start Free Trial</a>
+          </article>
+
+          <article class="pricing-card" data-tier="enterprise">
+            <div class="pricing-card-header">
+              <h3 class="pricing-tier-name">Enterprise</h3>
+              <p class="pricing-tier-desc">For organizations requiring unlimited scale and dedicated infrastructure.</p>
+            </div>
+            <div class="pricing-amount">
+              <span class="pricing-currency" data-price-symbol>$</span>
+              <span class="pricing-value" data-price-value>199</span>
+              <span class="pricing-period" data-price-period>/mo</span>
+            </div>
+            <ul class="pricing-features" aria-label="Enterprise plan features">
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--forsythia)" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Unlimited Agents</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--forsythia)" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Unlimited API Requests</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--forsythia)" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Full Telemetry Suite</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--forsythia)" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Dedicated Account Manager</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--forsythia)" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Zero Trust Architecture</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--forsythia)" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> SLA Guarantee 99.99%</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--forsythia)" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> On-Prem Deployment</li>
+            </ul>
+            <a href="#" class="pricing-cta">Contact Sales</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== TESTIMONIALS ===== -->
+    <section id="testimonials" class="testimonials-section" aria-label="Client Testimonials">
+      <div class="section-container">
+        <div class="section-badge" aria-hidden="true">
+          <svg width="24" height="12" viewBox="0 0 24 12" fill="currentColor"><path d="M0 6h4M8 6h4M16 6h4M20 2v8"/></svg>
+          TESTIMONIALS
+        </div>
+        <h2 class="section-heading">Trusted by the pioneers</h2>
+        <p class="section-subtext">From high-growth startups to enterprise research labs, Armory is the chosen infrastructure for teams building the next era of AI.</p>
+
+        <div class="testimonials-grid">
+          <article class="testimonial-card">
+            <div class="tc-header">
+              <div class="tc-logo">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10"/></svg>
+              </div>
+              <h4 class="tc-title">Infrastructure that finally scales</h4>
+            </div>
+            <div class="tc-rating" aria-label="5 out of 5 stars">
+              <span class="tc-rating-label">RATING</span>
+              <span class="tc-stars">★★★★★</span>
+            </div>
+            <div class="tc-comment">
+              <span class="tc-comment-label">COMMENT</span>
+              <p>The reliability of Armory is unmatched. We've migrated our entire neural pipeline to their edge nodes with zero downtime for our users.</p>
+            </div>
+            <div class="tc-footer">
+              <span class="tc-company">Vertex Labs</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+            </div>
+          </article>
+          <article class="testimonial-card">
+            <div class="tc-header">
+              <div class="tc-logo">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><rect x="2" y="2" width="20" height="20" rx="4"/></svg>
+              </div>
+              <h4 class="tc-title">Saved us months of R&D</h4>
+            </div>
+            <div class="tc-rating" aria-label="5 out of 5 stars">
+              <span class="tc-rating-label">RATING</span>
+              <span class="tc-stars">★★★★★</span>
+            </div>
+            <div class="tc-comment">
+              <span class="tc-comment-label">COMMENT</span>
+              <p>Instead of building our own agent logic from scratch, we used Armory. We went from a prototype to a global production launch in weeks.</p>
+            </div>
+            <div class="tc-footer">
+              <span class="tc-company">FlowState AI</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+            </div>
+          </article>
+          <article class="testimonial-card">
+            <div class="tc-header">
+              <div class="tc-logo">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/></svg>
+              </div>
+              <h4 class="tc-title">Precision in every inference</h4>
+            </div>
+            <div class="tc-rating" aria-label="5 out of 5 stars">
+              <span class="tc-rating-label">RATING</span>
+              <span class="tc-stars">★★★★★</span>
+            </div>
+            <div class="tc-comment">
+              <span class="tc-comment-label">COMMENT</span>
+              <p>The observability tools allow us to monitor agent accuracy in real-time. It has become a vital part of our model evaluation workflow.</p>
+            </div>
+            <div class="tc-footer">
+              <span class="tc-company">Neural Sync</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+            </div>
+          </article>
+          <article class="testimonial-card">
+            <div class="tc-header">
+              <div class="tc-logo">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4"/></svg>
+              </div>
+              <h4 class="tc-title">Enterprise-grade by default</h4>
+            </div>
+            <div class="tc-rating" aria-label="5 out of 5 stars">
+              <span class="tc-rating-label">RATING</span>
+              <span class="tc-stars">★★★★★</span>
+            </div>
+            <div class="tc-comment">
+              <span class="tc-comment-label">COMMENT</span>
+              <p>The node-based builder is a game changer for our team. Even non-technical staff can now help design agent workflows.</p>
+            </div>
+            <div class="tc-footer">
+              <span class="tc-company">Sentinel Ops</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FAQ ===== -->
+    <section id="faq" class="faq-section" aria-label="Frequently Asked Questions">
+      <div class="section-container faq-layout">
+        <div class="faq-left">
+          <div class="section-badge" aria-hidden="true">
+            <svg width="24" height="12" viewBox="0 0 24 12" fill="currentColor"><path d="M0 6h4M8 6h4M16 6h4M20 2v8"/></svg>
+            FAQ
+          </div>
+          <h2 class="section-heading">Common inquiries</h2>
+          <p class="section-subtext">Everything you need to know about deploying, scaling, and securing your neural agents with Armory. Can't find an answer?</p>
+          <a href="#" class="faq-contact-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+            Contact Us
+          </a>
+        </div>
+        <div class="faq-right" role="region" aria-label="FAQ accordion">
+          <details class="faq-item" open>
+            <summary class="faq-question">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+              What is the Armory platform?
+              <span class="faq-toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="faq-answer">
+              <p>Armory is a specialized infrastructure for building and deploying custom AI agents. We provide the neural logic and edge nodes required to run autonomous workflows at enterprise scale.</p>
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-question">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+              Who is this template designed for?
+              <span class="faq-toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="faq-answer">
+              <p>Armory is designed for engineering teams, AI startups, and enterprise organizations looking to build, deploy, and scale custom AI agents without managing complex infrastructure.</p>
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-question">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              Does Armory provide pre-built agents?
+              <span class="faq-toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="faq-answer">
+              <p>Yes. Armory includes a library of pre-built agent templates for common use cases like customer support, data processing, and content generation. You can customize them or build from scratch.</p>
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-question">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              How does it differ from a standard chatbot?
+              <span class="faq-toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="faq-answer">
+              <p>Unlike simple chatbots, Armory agents can execute multi-step workflows, connect to external APIs, process documents, and make autonomous decisions based on complex conditional logic.</p>
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-question">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+              Can I use my own custom domain?
+              <span class="faq-toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="faq-answer">
+              <p>Absolutely. All Armory plans support custom domain configuration. Enterprise plans include dedicated SSL certificates and CDN acceleration for your custom domains.</p>
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-question">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+              Is there a limit to how many agents I can build?
+              <span class="faq-toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="faq-answer">
+              <p>Starter plans include 3 active agents, Professional includes 15, and Enterprise plans offer unlimited agents with dedicated infrastructure resources.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== NEWSLETTER / CTA ===== -->
+    <section id="newsletter" class="newsletter-section" aria-label="Newsletter signup">
+      <div class="newsletter-bg" aria-hidden="true">
+        <canvas id="newsletter-canvas"></canvas>
+      </div>
+      <div class="section-container">
+        <div class="section-badge light" aria-hidden="true">
+          <svg width="24" height="12" viewBox="0 0 24 12" fill="currentColor"><path d="M0 6h4M8 6h4M16 6h4M20 2v8"/></svg>
+          GET STARTED
+        </div>
+        <h2 class="section-heading light">Stay ahead of the curve on AI systems</h2>
+        <p class="section-subtext light">Weekly insights on automation, AI workflows, and real builds. No fluff, just what works.</p>
+        <form class="newsletter-form" id="newsletter-form" aria-label="Newsletter subscription">
+          <input type="email" placeholder="jane@company.com" required aria-label="Email address" id="newsletter-email" />
+          <button type="submit" class="newsletter-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+            Subscribe
+          </button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer id="site-footer" class="site-footer" role="contentinfo">
+    <div class="section-container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <svg width="80" height="80" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+            <path d="M20 2L8 18h8l-4 20L32 20h-8l4-18H20z" fill="white"/>
+          </svg>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-heading">QUICK LINKS</h4>
+          <nav aria-label="Quick links">
+            <a href="#hero" class="footer-link">Home</a>
+            <a href="#pricing" class="footer-link">Pricing</a>
+            <a href="#case-studies" class="footer-link">Projects</a>
+            <a href="#faq" class="footer-link">Articles</a>
+          </nav>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-heading">COMPANY</h4>
+          <nav aria-label="Company links">
+            <a href="#" class="footer-link">About Us</a>
+            <a href="#" class="footer-link">Contact Us</a>
+            <a href="#" class="footer-link">Book A Call</a>
+            <a href="#" class="footer-link">More Templates</a>
+          </nav>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-heading">POLICIES</h4>
+          <nav aria-label="Policy links">
+            <a href="#" class="footer-link">Terms & Conditions</a>
+            <a href="#" class="footer-link">Privacy Policy</a>
+          </nav>
+          <div class="footer-social" aria-label="Social media links">
+            <a href="#" aria-label="X (Twitter)"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+            <a href="#" aria-label="LinkedIn"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+            <a href="#" aria-label="YouTube"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a>
+            <a href="#" aria-label="Instagram"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-brand-large" aria-hidden="true">
+        <span>armory</span>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/main.js"></script>
+</body>
+</html>
